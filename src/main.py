@@ -16,7 +16,7 @@ SCOPES = ['https://www.googleapis.com/auth/spreadsheets']
 
 # --- Flask App Setup ---
 app = Flask(__name__)
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "https://hswajqwm.manus.space"}})
 
 # --- Google Sheets API Setup ---
 def get_sheets_service():
